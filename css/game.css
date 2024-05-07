@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+ /* style for the three selection */
+  .selection {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 4rem;
+    transition: 100ms;
+  }
+
+  /* make the selection bigger when hover */
+  .selection:hover {
+    transform: scale(1.2);
+  }
+  
+  /* styling the result to make the grid */
+  .results {
+    margin-top: 1rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+  
+  /* make the result transparent for lose */
+  .result-selection {
+    opacity: .5;
+    font-size: 1.5rem;
+  }
+  
+  /* make the result clear for win */
+  .result-selection.winner {
+    opacity: 1;
+    font-size: 3rem;
+  }
